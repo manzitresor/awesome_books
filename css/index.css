@@ -1,0 +1,37 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navBar {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10rem;
+  gap: 20px;
+}
+
+.navBar li a {
+  cursor: pointer;
+}
+
+#date {
+  float: right;
+  color: black;
+  font-weight: bold;
+}
+
+#contactInfo {
+  display: none;
+}
+
+#book-form {
+  display: none;
+}
+
+#footer {
+  margin: 30% 0;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
