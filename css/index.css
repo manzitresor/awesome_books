@@ -10,9 +10,16 @@ body {
   margin-right: 10rem;
   gap: 20px;
 }
+.navBar li a {
+  cursor: pointer;
+}
 
-.form-group input {
-  width: 50%;
+#contactInfo {
+  display: none;
+}
+
+#book-form {
+  display: none;
 }
 
 #footer {

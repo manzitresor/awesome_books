@@ -18,24 +18,11 @@ class UI {
     list.appendChild(row);
   }
 
-  // static deleteBook(el) {
-  //   if (el.classList.contains('delete')) {
-  //     el.parentElement.parentElement.remove();
-  //   }
-  // }
-
-  // static showAlert(message, classname) {
-  //   const div = document.createElement('div');
-  //   div.className = `alert alert-${classname}`;
-  //   div.appendChild(document.createTextNode(message));
-
-  //   const container = document.querySelector('.container');
-  //   const form = document.querySelector('#book-form');
-  //   container.insertBefore(div, form);
-  //   setTimeout(() => {
-  //     document.querySelector('.alert').remove();
-  //   }, 3000);
-  // }
+  static deleteBook(el) {
+    if (el.classList.contains('remove')) {
+      el.parentElement.parentElement.remove();
+    }
+  }
 
   static clearFields() {
     document.querySelector('#title').value = '';

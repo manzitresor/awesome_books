@@ -13,9 +13,9 @@
     <nav class="container-fluid bg-light py-2 mt-4 d-flex justify-content-between align-items-center">
         <a href="#" class="display-6 text-decoration-none text-dark">Awesome Books</a>
         <ul class="d-flex navBar pt-4">
-            <li><a href="#" class="text-decoration-none text-dark">List</a></li>
-            <li><a href="#" class="text-decoration-none text-dark">Add new</a></li>
-            <li><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" id="list">List</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" id="add">Add new</a></li>
+            <li><a href="#" class="text-decoration-none text-dark" id="contact">Contact</a></li>
         </ul>
     </nav>
     <!-- Html for adding new book -->
@@ -33,7 +33,7 @@
     </form>
     <!-- TABLE TO DISPLAY BOOKS -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="bookList">
         <h3 class="display-6 text-center">All awesome books</h3>
 
         <table class="table table-striped mt-5">
@@ -47,6 +47,23 @@
             </tbody>
         </table>
     </div>
+
+    <section id="contactInfo">
+        <h1 class="h1-contact">Contact information</h1>
+        <div class="container">
+          <p>
+            Do you have any questions or you just want to say "Hello" <br />
+            you can reach out to us!
+          </p>
+          <div class="ul-div">
+            <ul>
+              <li>Our email mai@mail.com</li>
+              <li>Our phone number:015547835353</li>
+              <li>Our address streatname22.85042 city ,country</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     <footer class="container" id="footer">
         <p class="text-black">@2023 copyright Manzi</p>
     </footer>

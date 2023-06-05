@@ -30,3 +30,33 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
   //   Delete book msg
   UI.showAlert('Book Deleted', 'success');
 });
+
+const listBtn = document.querySelector('#list');
+const bookList = document.querySelector('#bookList');
+const contactInfo = document.querySelector('#contactInfo');
+const bookForm = document.querySelector('#book-form');
+const addBook = document.querySelector('#add');
+const contact = document.querySelector('#contact');
+
+// display books Event
+listBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  bookList.style.display = 'block';
+  contactInfo.style.display = 'none';
+  bookForm.style.display = 'none';
+});
+// add book form Event
+addBook.addEventListener('click', (e) => {
+  e.preventDefault();
+  bookForm.style.display = 'block';
+  bookList.style.display = 'none';
+  contactInfo.style.display = 'none';
+});
+
+// contact Event
+contact.addEventListener('click', (e) => {
+  e.preventDefault();
+  contactInfo.style.display = 'block';
+  bookForm.style.display = 'none';
+  bookList.style.display = 'none';
+});
