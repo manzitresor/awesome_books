@@ -14,6 +14,12 @@ body {
   cursor: pointer;
 }
 
+#date {
+  float: right;
+  color: black;
+  font-weight: bold;
+}
+
 #contactInfo {
   display: none;
 }

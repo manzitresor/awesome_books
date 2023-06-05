@@ -1,3 +1,4 @@
+import { luxon } from './luxon.js';
 import Store from './store.class.js';
 
 class UI {
@@ -16,6 +17,12 @@ class UI {
         <td><a href="#" class="btn btn-danger btn-sm remove">remove</a></td>
         `;
     list.appendChild(row);
+  }
+
+  static DateAndTime() {
+    document.getElementById('date').innerHTML = luxon.DateTime.now().toLocaleString(
+      luxon.DateTime.DATETIME_MED_WITH_SECONDS,
+    );
   }
 
   static deleteBook(el) {

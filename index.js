@@ -2,23 +2,21 @@ import Store from './modules/store.class.js';
 import UI from './modules/ui.class.js';
 
 class Book {
-  constructor(title, author, id) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.id = id;
   }
 }
 
 // Event to display books
-document.addEventListener('DOMContentLoaded', UI.displayBooks);
+document.addEventListener('DOMContentLoaded', UI.displayBooks, UI.DateAndTime());
 // add book
 document.querySelector('#book-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
-  const id = Date.now();
 
-  const book = new Book(title, author, id);
+  const book = new Book(title, author);
   // add book to UI
   UI.addBookToList(book);
   // add Book to store
