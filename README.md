@@ -25,7 +25,7 @@
 - [🤝 Contributing](#contributing)
 - [📝 License](#license)
 
-!-- PROJECT DESCRIPTION -->
+<!-- PROJECT DESCRIPTION -->
 
 # 📖 Awesome Books <a name="about-project"></a>
 
