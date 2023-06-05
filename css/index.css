@@ -2,3 +2,22 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.navBar {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10rem;
+  gap: 20px;
+}
+
+.form-group input {
+  width: 50%;
+}
+
+#footer {
+  margin: 30% 0;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}

@@ -10,9 +10,48 @@
 </head>
 <body>
     <div class="container">
-    <h1>Awesome book</h1>
+    <nav class="container-fluid bg-light py-2 mt-4 d-flex justify-content-between align-items-center">
+        <a href="#" class="display-6 text-decoration-none text-dark">Awesome Books</a>
+        <ul class="d-flex navBar pt-4">
+            <li><a href="#" class="text-decoration-none text-dark">List</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Add new</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Html for adding new book -->
+    <form id="book-form" class="container-fluid">
+        <div class="form-group">
+           <label for="title" class="mt-4">Title</label>
+            <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="author" class="mt-4">Author</label>
+             <input type="text" id="author" class="form-control">
+         </div>
+         <input type="submit" class="btn btn-primary btn-block  mt-3" value="Add">
+
+    </form>
+    <!-- TABLE TO DISPLAY BOOKS -->
+
+    <div class="container-fluid">
+        <h3 class="display-6 text-center">All awesome books</h3>
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody class="book-list">
+            </tbody>
+        </table>
+    </div>
+    <footer class="container" id="footer">
+        <p class="text-black">@2023 copyright Manzi</p>
+    </footer>
 </div>
-    
- <script src="./index.js"></script>   
+   
+ <script type="module" src="./index.js"></script>   
 </body>
 </html>
