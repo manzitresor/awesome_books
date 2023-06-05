@@ -10,6 +10,7 @@ body {
   margin-right: 10rem;
   gap: 20px;
 }
+
 .navBar li a {
   cursor: pointer;
 }
