@@ -15,13 +15,9 @@ class Store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBook(title) {
+  static removeBook(index) {
     const books = Store.getBooks();
-    books.forEach((book, index) => {
-      if (book.title === title) {
-        books.splice(index, 1);
-      }
-    });
+    books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
   }
 }

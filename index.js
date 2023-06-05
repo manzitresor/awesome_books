@@ -1,10 +1,11 @@
-import Store from './modules/store.js';
-import UI from './modules/ui.js';
+import Store from './modules/store.class.js';
+import UI from './modules/ui.class.js';
 
 class Book {
-  constructor(title, author) {
+  constructor(title, author, id) {
     this.title = title;
     this.author = author;
+    this.id = id;
   }
 }
 
@@ -15,8 +16,9 @@ document.querySelector('#book-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
+  const id = Date.now();
 
-  const book = new Book(title, author);
+  const book = new Book(title, author, id);
   // add book to UI
   UI.addBookToList(book);
   // add Book to store
@@ -25,10 +27,11 @@ document.querySelector('#book-form').addEventListener('submit', (event) => {
 });
 // delete book
 document.querySelector('.book-list').addEventListener('click', (e) => {
-  UI.deleteBook(e.target);
-  Store.removeBook(e.target);
-  //   Delete book msg
-  UI.showAlert('Book Deleted', 'success');
+  if (e.target.classList.contains('remove')) {
+    const bookId = e.target.parentElement.previousElementSibling.textContent;
+    UI.deleteBook(e.target);
+    Store.removeBook(bookId);
+  }
 });
 
 const listBtn = document.querySelector('#list');
