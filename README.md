@@ -1,30 +1,4 @@
 
-<a name="readme-top"></a>
-
-<div align="center">
-
-  <h3><b>Awesome Books</b></h3>
-
-</div>
-
-
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [📝 License](#license)
-
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Awesome Books <a name="about-project"></a>
@@ -35,20 +9,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> HTML and Javascript Languages
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://html.com/">HTML</a></li>
-  </ul>
-</details>
-<details>
-  <summary>Functionality</summary>
-  <ul>
-    <li><a href="https://www.javascripttutorial.net/">Javascript</a></li>
-  </ul>
-</details>
-
+> HTML, CSS and Javascript Languages
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -57,45 +18,8 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> To get a local copy up and running, follow these steps.
-### Prerequisites
-
-In order to run this project you need:
-
-1. Latest version of your browser
-2. Code Editor
-
-<!--
-Example command:
-```sh
- gem install rails
-```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-Run this command
-
-```sh
-  cd Folder_Name
-  git clone https://github.com/manzitresor/awesome_books.git
-```
-
-### Install
-
-Install this project with:
-
-```sh
-  cd awesome_books
-  npm install
-```
+### Live demo <a name="live-demo"></a>
+<a href=" https://manzitresor.github.io/awesome_books/">Click here For Live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
