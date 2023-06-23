@@ -1,18 +1,18 @@
 :root {
   --green: #0f6805;
-  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --border: 2rem solid rgba(0, 0, 0, 0.1);
-  --outline: .1rem solid rgba(0, 0, 0, 0.1); 
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 * {
-  font-family: Tahoma;
-  padding: 0 ;
+  font-family: Tahoma, sans-serif;
+  padding: 0;
   margin: 0;
   border: 0;
   outline: 0;
   text-decoration: none;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .container {
@@ -103,7 +103,7 @@
   font-size: 15px;
   background-color: var(--green);
   color: #fff;
-  box-shadow: var(--box-shadow); 
+  box-shadow: var(--box-shadow);
 }
 
 .add-btn:hover {
@@ -129,7 +129,8 @@
   width: 100%;
 }
 
-th,td {
+th,
+td {
   text-align: left;
   padding: 8px;
 }
@@ -149,9 +150,9 @@ th,td {
 }
 
 #footer {
-  position:fixed;
-  left: 0px;
-  bottom: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   height: 50px;
   width: 100%;
   background-color: rgb(9, 3, 31);
@@ -196,7 +197,7 @@ th,td {
   .navbar .menu-btn {
     display: none;
   }
-  
+
   .navbar .nav-list {
     display: flex;
     gap: 20px;
