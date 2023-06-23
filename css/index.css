@@ -41,11 +41,11 @@
 
 .nav-list {
   list-style: none;
+  display: none;
 }
 
 .nav-list li a {
   color: #fff;
-  display: none;
 }
 
 .menu-btn {
@@ -114,7 +114,6 @@
 
 #bookList {
   margin: 20% 0 0 0;
-  display: none;
 }
 
 .awesome {
@@ -142,6 +141,7 @@ th,td {
 
 .delete {
   color: rgb(139, 14, 14);
+  cursor: pointer;
 }
 
 .data:nth-child(odd) {
@@ -170,7 +170,7 @@ th,td {
 }
 
 #contactInfo {
-  /* display: none; */
+  display: none;
   margin: 20% 0 0 0;
 }
 
@@ -190,4 +190,44 @@ th,td {
 
 .contact-list li {
   margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .menu-btn {
+    display: none;
+  }
+  
+  .navbar .nav-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-list li a:hover {
+    color: var(--green);
+  }
+
+  #bookList {
+    margin: 10px;
+    width: 80%;
+    padding-left: 9%;
+  }
+
+  #book-form {
+    width: 50%;
+    margin-left: 22%;
+    margin-top: 10%;
+  }
+
+  #contactInfo {
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  .h1-contact {
+    margin-left: 15px;
+  }
+
+  .footer-content {
+    margin-left: 40%;
+  }
 }

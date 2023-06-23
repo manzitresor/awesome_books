@@ -15,7 +15,7 @@ class UI {
     row.innerHTML = `
         <td>${book.title}</td>
         <td>${book.author}</td>
-        <td><a href="#" class="btn remove"><i class="fas fa-trash-alt delete"></i></a></td>
+        <td><i class="fas fa-trash-alt delete remove"></i></td>
         `;
     list.appendChild(row);
   }
