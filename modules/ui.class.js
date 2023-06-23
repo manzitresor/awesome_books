@@ -11,10 +11,11 @@ class UI {
   static addBookToList(book) {
     const list = document.querySelector('.book-list');
     const row = document.createElement('tr');
+    row.classList.add('data');
     row.innerHTML = `
         <td>${book.title}</td>
         <td>${book.author}</td>
-        <td><a href="#" class="btn btn-danger btn-sm remove">remove</a></td>
+        <td><a href="#" class="btn remove"><i class="fas fa-trash-alt delete"></i></a></td>
         `;
     list.appendChild(row);
   }

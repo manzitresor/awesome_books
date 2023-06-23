@@ -115,3 +115,59 @@
 #contactInfo {
   display: none;
 }
+
+#bookList {
+  margin: 20% 0 0 0;
+}
+
+.awesome {
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: var(--green);
+  font-size: 25px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,td {
+  text-align: left;
+  padding: 8px;
+}
+
+.data {
+  text-transform: capitalize;
+  background-color: #ffe;
+}
+
+.delete {
+  color: rgb(139, 14, 14);
+}
+
+.data:nth-child(odd) {
+  background-color: rgb(185, 184, 188);
+}
+
+#footer {
+  position:fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(9, 3, 31);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  font-size: 18px;
+  margin: auto 20%;
+}
+
+.footer-content span {
+  color: #fff;
+}
