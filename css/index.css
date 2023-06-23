@@ -1,37 +1,117 @@
-body {
-  padding: 0;
+:root {
+  --green: #0f6805;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0, 0.1);
+  --outline: .1rem solid rgba(0, 0, 0, 0.1); 
+}
+
+* {
+  font-family: Tahoma;
+  padding: 0 ;
   margin: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  transition: all .2s linear;
 }
 
-.navBar {
+.container {
+  background: #eee;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(9, 3, 31);
+  padding: 10px 20px  10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 18px;
+  font-style: bold;
+}
+
+.logo i {
+  color: var(--green);
+}
+
+.nav-list {
   list-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 10rem;
-  gap: 20px;
 }
 
-.navBar li a {
+.nav-list li a {
+  color: #fff;
+  display: none;
+}
+
+.menu-btn {
+  color: #fff;
+  padding-left: 40%;
+  font-size: 20px;
   cursor: pointer;
 }
 
-#date {
-  float: right;
-  color: black;
-  font-weight: bold;
+.menu-btn:hover {
+  color: var(--green);
 }
 
-#contactInfo {
-  display: none;
+.date-container {
+  float: right;
+  margin: 10px auto 10px auto;
+  font-weight: bold;
 }
 
 #book-form {
   display: none;
+  margin: 20% 2% 2% 2%;
+  width: 90%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
 }
 
-#footer {
-  margin: 30% 0;
-  border: 2px solid black;
-  text-align: center;
-  font-weight: bold;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px;
+}
+
+.form-group label {
+  text-transform: capitalize;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.add-btn {
+  padding: 10px;
+  width: 17%;
+  border-radius: 4px;
+  margin: auto 30%;
+  font-size: 15px;
+  background-color: var(--green);
+  color: #fff;
+  box-shadow: var(--box-shadow); 
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  background-color: #eee;
+  color: rgb(9, 3, 31);
+}
+
+#contactInfo {
+  display: none;
 }

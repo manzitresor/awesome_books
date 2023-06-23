@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome book</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-    <nav class="container-fluid bg-light py-2 mt-4 d-flex justify-content-between align-items-center">
-        <a href="#" class="display-6 text-decoration-none text-dark">Awesome Books</a>
-        <ul class="d-flex navBar pt-4">
+    <nav class="navbar">
+        <a href="#" class="logo"><i class="fas fa-font"></i>wesome <i class="fas fa-bold"></i>ooks</a>
+        <i class="fas fa-th-large menu-btn"></i>
+        <ul class="nav-list">
             <li><a href="#" class="text-decoration-none text-dark" id="list">List</a></li>
             <li><a href="#" class="text-decoration-none text-dark" id="add">Add new</a></li>
             <li><a href="#" class="text-decoration-none text-dark" id="contact">Contact</a></li>
         </ul>
     </nav>
     <!--date and time section  -->
-    <div>
+    <div class="date-container">
     <p id="date"></p>
     </div>
     <!-- Html for adding new book -->
-    <form id="book-form" class="container-fluid">
+    <form id="book-form" >
         <div class="form-group">
-           <label for="title" class="mt-4">Title</label>
+            <label for="title">Title</label>
             <input type="text" id="title" class="form-control">
         </div>
         <div class="form-group">
-            <label for="author" class="mt-4">Author</label>
+            <label for="author">Author</label>
              <input type="text" id="author" class="form-control">
          </div>
-         <input type="submit" class="btn btn-primary btn-block  mt-3" value="Add">
+         <input type="submit" class=" add-btn" value="Add">
 
     </form>
     <!-- TABLE TO DISPLAY BOOKS -->
 
-    <div class="container-fluid mt-5" id="bookList">
+    <div id="bookList">
         <h3 class="display-6 text-center">All awesome books</h3>
 
         <table class="table table-striped mt-5">
@@ -68,7 +69,7 @@
           </div>
         </div>
       </section>
-    <footer class="container" id="footer">
+    <footer id="footer">
         <p class="text-black">@2023 copyright Manzi</p>
     </footer>
 </div>
