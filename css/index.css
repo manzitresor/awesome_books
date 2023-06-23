@@ -112,12 +112,9 @@
   color: rgb(9, 3, 31);
 }
 
-#contactInfo {
-  display: none;
-}
-
 #bookList {
   margin: 20% 0 0 0;
+  display: none;
 }
 
 .awesome {
@@ -170,4 +167,27 @@ th,td {
 
 .footer-content span {
   color: #fff;
+}
+
+#contactInfo {
+  /* display: none; */
+  margin: 20% 0 0 0;
+}
+
+.contact-container {
+  padding: 20px;
+}
+
+.reachout {
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-list li {
+  margin: 10px;
 }
