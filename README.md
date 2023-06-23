@@ -19,7 +19,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Live demo <a name="live-demo"></a>
-<a href=" https://manzitresor.github.io/awesome_books/">Click here For Live demo</a>
+[Live demo Here](https://manzitresor.github.io/awesome_books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -32,14 +32,6 @@
 - GitHub: [@githubhandle](https://github.com/manzitresor)
 - Twitter: [@githubhandle](https://twitter.com/MANZITresor3)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/manzi-tresor-783b4022a/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- Adding some styles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
